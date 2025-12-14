@@ -72,3 +72,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/pinjam/add', [PinjamController::class, 'add']);
     Route::post('/pinjam/save', [PinjamController::class, 'save']);
 });
+
+use Illuminate\Support\Facades\DB;
+
+Route::get('/api-buku', function () {
+    return response()->json(
+        DB::table('mst_buku')->get()
+    );
+});

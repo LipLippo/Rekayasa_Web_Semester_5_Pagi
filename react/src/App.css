@@ -1,0 +1,86 @@
+/* ===== Global ===== */
+body {
+  background-color: #111827;
+  color: #e5e7eb;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ===== Container ===== */
+.app-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 24px;
+}
+
+/* ===== Title ===== */
+.app-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== Button ===== */
+.refresh-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.35);
+}
+
+/* ===== Table ===== */
+.table-wrapper {
+  background: #1f2933;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* ===== Table Head ===== */
+thead {
+  background: #111827;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+/* ===== Table Body ===== */
+tbody td {
+  padding: 14px;
+  font-size: 14px;
+  border-top: 1px solid #374151;
+}
+
+tbody tr:hover {
+  background-color: #374151;
+}
+
+/* ===== Empty State ===== */
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
+}
